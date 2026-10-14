@@ -1,0 +1,24 @@
+{
+  "name": "elaion-api",
+  "version": "1.0.0",
+  "description": "Elaion API for olive farm management",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "seed": "bun src/scripts/seed.ts",
+    "db:migrate": "bun src/scripts/migrate.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.1",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "jose": "^6.2.12",
+    "mongodb": "^6.3.0"
+  }
+}
